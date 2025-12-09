@@ -1,7 +1,7 @@
 export interface Livro {
   titulo: string;
   autoria: string;
-  genero: string;
-  imagem: string;
+  generoId: string;
   favorito: boolean;
+  imagem: string;
 }

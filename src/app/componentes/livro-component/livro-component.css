@@ -11,7 +11,6 @@ section {
   overflow: hidden;
   padding-top: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-left: 64px;
 }
 
 section .info-livro {
@@ -44,7 +43,7 @@ section .info-livro > * {
   color: var(--color-secundaria);
 }
 
-section .livro-imagem {
+section .imagem-livro {
   margin-top: 32px;
 }
 section img {

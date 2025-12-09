@@ -1,0 +1,11 @@
+<section class="genero">
+  <h3 class="genero-titulo">
+    {{ genero().id.charAt(0).toUpperCase() + genero().id.substring(1, genero().id.length) }}
+  </h3>
+  <span class="linha-destaque linha-destaque--pequena"></span>
+</section>
+<div class="livros-genero">
+  @for (livro of genero().livros; track livro) {
+    <app-livro-component [livro]="livro"></app-livro-component>
+  }
+</div>

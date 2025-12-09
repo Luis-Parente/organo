@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {Livro} from './livro';
+import {Component, input} from '@angular/core';
+import {Livro} from './Livro';
 
 @Component({
   selector: 'app-livro-component',
@@ -8,16 +8,9 @@ import {Livro} from './livro';
   styleUrl: './livro-component.css',
 })
 export class LivroComponent {
-
-  livro: Livro = {
-    titulo: "Mistborn: The Final Empire",
-    autoria: "Brandon Sanderson",
-    genero: "Fantasia",
-    imagem: "sem-livros.png",
-    favorito: false
-  }
+  livro = input.required<Livro>();
 
   alternarFavorito() {
-    this.livro.favorito = !this.livro.favorito;
+    this.livro().favorito = !this.livro().favorito;
   }
 }

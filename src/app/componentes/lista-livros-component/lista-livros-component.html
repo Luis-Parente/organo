@@ -1,0 +1,8 @@
+<section>
+  <h2 class="titulo-lista">Minhas Leituras</h2>
+  <span class="linha-destaque linha-destaque--grande"></span>
+</section>
+
+@for (genero of listaGeneros; track genero) {
+  <app-genero-literario-component [genero]="genero"></app-genero-literario-component>
+}
